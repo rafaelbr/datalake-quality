@@ -1,0 +1,64 @@
+{
+  "expectation_suite_name": "teste.teste",
+  "meta": {
+    "great_expectations_version": "0.15.19",
+    "data_asset_type": "Dataset"
+  },
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "name",
+          "email",
+          "password",
+          "created_at",
+          "updated_at"
+        ]
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+            "column": "id",
+            "type_": "int"
+        }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+            "column": "name",
+            "type_": "object"
+        }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+            "column": "email",
+            "type_": "object"
+        }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+            "column": "password",
+            "type_": "object"
+        }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+            "column": "created_at",
+            "type_": "object"
+        }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+            "column": "updated_at",
+            "type_": "object"
+        }
+    }
+  ]
+}

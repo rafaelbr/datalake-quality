@@ -1,0 +1,41 @@
+{
+  "databases": [
+    {
+      "name": "teste",
+      "append": false,
+      "tables": [
+        {
+          "name": "teste",
+          "delimiter": "|",
+          "schema": [
+              {
+                  "name": "id",
+                  "type": "bigint"
+              },
+              {
+                  "name": "name",
+                  "type": "string"
+              },
+              {
+                  "name": "email",
+                  "type": "string"
+              },
+              {
+                  "name": "password",
+                  "type": "string"
+              },
+              {
+                  "name": "created_at",
+                  "type": "string"
+              },
+              {
+                  "name": "updated_at",
+                  "type": "string"
+              }
+          ],
+          "partitions": []
+        }
+      ]
+    }
+  ]
+}
