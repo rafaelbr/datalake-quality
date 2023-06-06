@@ -1,0 +1,38 @@
+{
+  "expectation_suite_name": "ups.events",
+  "meta": {
+    "great_expectations_version": "0.15.19",
+    "data_asset_type": "Dataset"
+  },
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          [
+            "last_input_vac",
+            "input_vac",
+            "output_vac",
+            "output_power",
+            "power_now",
+            "output_hz",
+            "battery_level",
+            "temperature",
+            "beep_on",
+            "shutdown_active",
+            "test_active",
+            "ups_ok",
+            "boost",
+            "bypass",
+            "low_battery",
+            "battery_in_use",
+            "publish_time",
+            "info",
+            "name",
+            "no_data"
+          ]
+        ]
+      }
+    }
+  ]
+}

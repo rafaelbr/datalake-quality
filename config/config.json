@@ -35,6 +35,100 @@
           ],
           "partitions": []
         }
+        ,
+        {
+          "name": "ups",
+          "append": true,
+          "tables": [
+            {
+              "name": "events",
+              "delimiter": "|",
+              "schema": [
+                {
+              "name": "last_input_vac",
+              "type": "double"
+            },
+            {
+              "name": "input_vac",
+              "type": "double"
+            },
+            {
+              "name": "output_vac",
+              "type": "double"
+            },
+            {
+              "name": "output_power",
+              "type": "double"
+            },
+            {
+              "name": "power_now",
+              "type": "double"
+            },
+            {
+              "name": "output_hz",
+              "type": "double"
+            },
+            {
+              "name": "battery_level",
+              "type": "double"
+            },
+            {
+              "name": "temperature",
+              "type": "double"
+            },
+            {
+              "name": "beep_on",
+              "type": "boolean"
+            },
+            {
+              "name": "shutdown_active",
+              "type": "boolean"
+            },
+            {
+              "name": "test_active",
+              "type": "boolean"
+            },
+            {
+              "name": "ups_ok",
+              "type": "boolean"
+            },
+            {
+              "name": "boost",
+              "type": "boolean"
+            },
+            {
+              "name": "bypass",
+              "type": "boolean"
+            },
+            {
+              "name": "low_battery",
+              "type": "boolean"
+            },
+            {
+              "name": "battery_in_use",
+              "type": "boolean"
+            },
+            {
+              "name": "publish_time",
+              "type": "string"
+            },
+            {
+              "name": "info",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+                "name": "no_data",
+                "type": "boolean"
+            }
+              ]
+            }
+          ],
+          "partitions": []
+        }
       ]
     }
   ]
