@@ -34,7 +34,7 @@ def read_config():
 
 # Ler arquivo no bucket
 
-config = read_config()
+config = None
 
 def check_file_exists_s3(bucket, key):
     s3 = boto3.resource('s3')
@@ -59,7 +59,7 @@ def read_from_s3(bucket, key):
 
 # Validar arquivo na configuracao
 def check_database_config(bucket, key):
-
+    config = read_config()
     key_parts = key.split('/')
 
     if len(key_parts) < 4:

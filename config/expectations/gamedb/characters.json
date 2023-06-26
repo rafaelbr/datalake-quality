@@ -1,0 +1,21 @@
+{
+  "expectation_suite_name": "gamedb.characters",
+  "meta": {
+    "great_expectations_version": "0.15.19",
+    "data_asset_type": "Dataset"
+  },
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+            "character_id",
+            "character_name",
+            "character_class",
+            "character_race",
+            "player_id"
+        ]
+      }
+    }
+  ]
+}
